@@ -33,7 +33,6 @@
         </sprites>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_evendanker_memes</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_walls</background>
