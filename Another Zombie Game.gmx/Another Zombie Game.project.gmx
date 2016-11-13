@@ -33,7 +33,6 @@
         </sprites>
       </sprites>
     </sprites>
-    <sprite>sprites\dank_memes</sprite>
     <sprite>sprites\spr_evendanker_memes</sprite>
   </sprites>
   <backgrounds name="background">
