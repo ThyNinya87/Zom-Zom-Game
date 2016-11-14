@@ -32,6 +32,7 @@ anmi_speed = 0.2;
 state = "idle";
 dir = 90;
 accel = 1.5
+depth = -1;
 //gun 
 instance_create(x,y,obj_ranged);
 scr_gunplacement();
@@ -65,6 +66,116 @@ gamepad_set_axis_deadzone(1,0.5);
 
 scr_playernormal();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//one
+if(place_meeting(x,y,obj_shotgun))   {
+if(obj_ranged.guntype = 1)   {
+
+    if(place_meeting(x,y,obj_pistol)) {
+
+    obj_ranged.positionOne ="pistol"
+
+}
+if(place_meeting(x,y,obj_shotgun)) {
+
+    obj_ranged.positionOne ="shotgun"
+
+}
+if(place_meeting(x,y,obj_rpg)) {
+
+    obj_ranged.positionOne ="rpg"
+
+}
+
+}
+//two
+
+if(obj_ranged.guntype = 2)   {
+
+    if(place_meeting(x,y,obj_pistol)) {
+
+    obj_ranged.positionTwo ="pistol"
+
+}
+if(place_meeting(x,y,obj_shotgun)) {
+
+    obj_ranged.positionTwo ="shotgun"
+
+}
+if(place_meeting(x,y,obj_rpg)) {
+
+    obj_ranged.positionTwo ="rpg"
+
+}
+
+}
+//three
+if(obj_ranged.guntype = 3)   {
+
+    if(place_meeting(x,y,obj_pistol)) {
+
+    obj_ranged.positionThree ="pistol"
+
+}
+if(place_meeting(x,y,obj_shotgun)) {
+
+    obj_ranged.positionThree ="shotgun"
+
+}
+if(place_meeting(x,y,obj_rpg)) {
+
+    obj_ranged.positionThree ="rpg"
+
+}
+
+
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x,y,obj_shotgun))    {
+
+instance_destroy();
+
+}
 </string>
           </argument>
         </arguments>

@@ -25,12 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = "bat"
+            <string>var obj_ranged.positionOne ="";
+var obj_ranged.positionTwo ="";
+var obj_ranged.positionThree ="";
 gunamount = 3;  // +1 more than actual gun ammount
-guntype = clamp(2,1,2);
-weapon_sprite = spr_bat;
+guntype = clamp(2,1,3);
+//weapon_sprite = spr_pistol;
 
-sprite_index = weapon_sprite; 
+//sprite_index = weapon_sprite; 
 
 
 </string>
@@ -94,52 +96,130 @@ if (guntype &lt;=0) { guntype += 1  }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// states
-
-switch (state)  {
-
-    case "bat":  {
-    sprite_index = spr_bat ;
-    if(obj_player.dir = 90)   image_index = 0; //up
-    if(obj_player.dir = 0)    image_index = 1; //right
-    if(obj_player.dir = 270)  image_index = 2; //down
-    if(obj_player.dir = 180)  image_index = 3; //left
- }
-    break;
-    
-    case "shotgun":    {
-    sprite_index = spr_shotgun ;
-    if(obj_player.dir = 90)   image_index = 0; //up
-    if(obj_player.dir = 0)    image_index = 1; //right
-    if(obj_player.dir = 270)  image_index = 2; //down
-    if(obj_player.dir = 180)  image_index = 3; //left
+            <string>//positionOne
+switch(obj_ranged.positionOne) {
+    case "nothing": {
         
-   // scr_stateoptions();
- }
     break;
-/*
+    }
     case "pistol":  {
-    sprite_index = spr_pistol ;
+    sprite_index = spr_pistol
+    
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
     if(obj_player.dir = 180)  image_index = 3; //left
     
- }
     break;
- 
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun
     
-    case "machinegun":  {
-    sprite_index = spr_machinegun ;
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
     if(obj_player.dir = 180)  image_index = 3; //left
     
- }
     break;
-*/
+    }
+    case "rpg": {
+    sprite_index = spr_rpg
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
 }
+
+//positionTwo
+switch(positionTwo) {
+
+    case "nothing": {
+        
+    break;
+    }
+    case "pistol":  {
+    sprite_index = spr_pistol
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "rpg": {
+    sprite_index = spr_rpg
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    
+}
+
+//positionThree
+switch(positionThree) {
+
+    case "nothing": {
+        
+    break;
+    }
+    case "pistol":  {
+    sprite_index = spr_pistol
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "rpg": {
+    sprite_index = spr_rpg
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+
+}
+
+/*
+sprite_index = spr_weapon (with 4 index)
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
 
 </string>
           </argument>

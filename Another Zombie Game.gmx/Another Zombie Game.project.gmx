@@ -22,15 +22,20 @@
       <sprite>sprites\spr_quit</sprite>
     </sprites>
     <sprites name="Weapons">
-      <sprites name="Ranged Weapons">
-        <sprites name="Shotgun">
+      <sprites name="Inhand">
+        <sprites name="Ranged Weapons">
           <sprite>sprites\spr_shotgun</sprite>
+          <sprite>sprites\spr_pistol</sprite>
+          <sprite>sprites\spr_rpg</sprite>
         </sprites>
-      </sprites>
-      <sprites name="Melee Weapons">
-        <sprites name="Bat">
+        <sprites name="Melee Weapons">
           <sprite>sprites\spr_bat</sprite>
         </sprites>
+      </sprites>
+      <sprites name="Onground">
+        <sprite>sprites\spr_shotgun_ground</sprite>
+        <sprite>sprites\spr_pistol_ground</sprite>
+        <sprite>sprites\spr_rpg_ground</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -49,7 +54,16 @@
         <script>scripts\scr_playermain.gml</script>
         <script>scripts\scr_playerinputs.gml</script>
         <script>scripts\scr_stateoptions.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Weapons">
+      <scripts name="Mechs">
         <script>scripts\scr_gunplacement.gml</script>
+      </scripts>
+      <scripts name="List of Weapons">
+        <script>scripts\scr_collisionWeaponOne.gml</script>
+        <script>scripts\scr_collisionWeaponTwo.gml</script>
+        <script>scripts\scr_collisionWeaponThree.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -64,6 +78,12 @@
       <objects name="Weapons">
         <objects name="Ranged">
           <object>objects\obj_ranged</object>
+        </objects>
+        <objects name="Guns">
+          <object>objects\obj_bat</object>
+          <object>objects\obj_shotgun</object>
+          <object>objects\obj_pistol</object>
+          <object>objects\obj_rpg</object>
         </objects>
       </objects>
       <objects name="player stats">

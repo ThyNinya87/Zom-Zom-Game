@@ -1,20 +1,25 @@
- switch (guntype)    {
-    
-    case 1: {
-    //bat
-    state = "bat"
-    
+switch(guntype) {
 
- }
-    break;
-    
-    case 2:{
-    
-    //shotgun
-    state = "shotgun"
+case 1: {
 
- }
-    break;
- 
- }
+    positionOne ="nothing"
+    //scr_collisionWeaponOne();
+break;
+}
+case 2: {
+
+    positionTwo ="nothing"
+  // scr_collisionWeaponTwo();
+break;
+}
+
+case 3: {
+
+    positionThree ="nothing"
+   // scr_collisionWeaponThree();
+break;
+}
+
+
+}
     
