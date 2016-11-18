@@ -4,7 +4,7 @@ case 1: {
 
     switch(positionOne) {
     case "nothing": {
-        
+        sprite_index = spr_gunholder;
     break;
     }
     case "pistol":  {
@@ -48,7 +48,7 @@ case 2: {
 switch(positionTwo) {
 
     case "nothing": {
-        
+                sprite_index = spr_gunholder;
     break;
     }
     case "pistol":  {
@@ -90,7 +90,7 @@ case 3: {
 switch(positionThree) {
 
     case "nothing": {
-        
+                sprite_index = spr_gunholder;
     break;
     }
     case "pistol":  {
