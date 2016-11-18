@@ -83,6 +83,7 @@ switch(positionTwo) {
     }
     
 }
+break;
 }
 case 3: {
 
@@ -125,6 +126,7 @@ switch(positionThree) {
     }
 break;
 }
+break ;
 }
 
 }
