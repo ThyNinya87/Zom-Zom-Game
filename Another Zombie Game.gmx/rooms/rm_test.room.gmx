@@ -56,6 +56,8 @@ obj_pause.pause = 0;</code>
   <instances>
     <instance objName="obj_player" x="272" y="240" name="inst_C35D6C5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shotgun" x="224" y="224" name="inst_E4F06C4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gunttype" x="96" y="320" name="inst_F27DBE98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shotgun_on" x="160" y="320" name="inst_4EE68169" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_walls" x="0" y="0" w="32" h="32" xo="0" yo="32" id="10000004" name="inst_714CF481" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -38,6 +38,15 @@
         <sprite>sprites\spr_rpg_ground</sprite>
       </sprites>
     </sprites>
+    <sprites name="test">
+      <sprite>sprites\spr_gun2</sprite>
+      <sprite>sprites\spr_gun1</sprite>
+      <sprite>sprites\spr_gun3</sprite>
+    </sprites>
+    <sprites name="text 2">
+      <sprite>sprites\spr_shotgun_on</sprite>
+      <sprite>sprites\spr_shotgun_off</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_walls</background>
@@ -90,6 +99,8 @@
         <object>objects\obj_health</object>
         <object>objects\obj_shield</object>
       </objects>
+      <object>objects\obj_gunttype</object>
+      <object>objects\obj_shotgun_on</object>
     </objects>
     <objects name="UI">
       <object>objects\obj_inti</object>

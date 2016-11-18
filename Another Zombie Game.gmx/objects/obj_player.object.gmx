@@ -86,12 +86,36 @@ scr_playernormal();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//one
-if(place_meeting(x,y,obj_shotgun))   {
+            <string>if(place_meeting(x,y,obj_shotgun))   {
+
+    if(obj_ranged.guntype = 1) {
+    
+        obj_ranged.positionOne ="shotgun"
+
+    
+    }
+    if(obj_ranged.guntype = 2) {
+    
+        obj_ranged.positionTwo ="shotgun"
+    
+    }
+    if(obj_ranged.guntype = 3) {
+    
+        obj_ranged.positionThree ="shotgun"
+    
+    }
+
+}
+
+
+
+
+/*
+//one
 if(obj_ranged.guntype = 1)   {
 
     if(place_meeting(x,y,obj_pistol)) {
-
+    
     obj_ranged.positionOne ="pistol"
 
 }
@@ -106,7 +130,7 @@ if(place_meeting(x,y,obj_rpg)) {
 
 }
 
-}
+} 
 //two
 
 if(obj_ranged.guntype = 2)   {
@@ -150,32 +174,7 @@ if(place_meeting(x,y,obj_rpg)) {
 
 }
 
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(place_meeting(x,y,obj_shotgun))    {
 
-instance_destroy();
-
-}
 </string>
           </argument>
         </arguments>

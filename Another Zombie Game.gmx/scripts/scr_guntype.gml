@@ -2,24 +2,129 @@ switch(guntype) {
 
 case 1: {
 
-    positionOne ="nothing"
-    //scr_collisionWeaponOne();
+    switch(positionOne) {
+    case "nothing": {
+        
+    break;
+    }
+    case "pistol":  {
+    sprite_index = spr_pistol;
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun;
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "rpg": {
+    sprite_index = spr_rpg;
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+}
+
+
 break;
 }
 case 2: {
 
-    positionTwo ="nothing"
-  // scr_collisionWeaponTwo();
-break;
-}
+//positionTwo
+switch(positionTwo) {
 
+    case "nothing": {
+        
+    break;
+    }
+    case "pistol":  {
+    sprite_index = spr_pistol
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "rpg": {
+    sprite_index = spr_rpg
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    
+}
+}
 case 3: {
 
-    positionThree ="nothing"
-   // scr_collisionWeaponThree();
+//positionThree
+switch(positionThree) {
+
+    case "nothing": {
+        
+    break;
+    }
+    case "pistol":  {
+    sprite_index = spr_pistol
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "shotgun": {
+    sprite_index = spr_shotgun
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
+    case "rpg": {
+    sprite_index = spr_rpg
+    
+    if(obj_player.dir = 90)   image_index = 0; //up
+    if(obj_player.dir = 0)    image_index = 1; //right
+    if(obj_player.dir = 270)  image_index = 2; //down
+    if(obj_player.dir = 180)  image_index = 3; //left
+    
+    break;
+    }
 break;
 }
-
+}
 
 }
-    
