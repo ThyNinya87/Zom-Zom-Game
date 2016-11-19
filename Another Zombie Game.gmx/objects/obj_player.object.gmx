@@ -86,7 +86,9 @@ scr_playernormal();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,obj_shotgun))   {
+            <string>
+//shotgun
+if(place_meeting(x,y,obj_shotgun))   {
 
     if(obj_ranged.guntype = 1) {
     
@@ -102,6 +104,27 @@ scr_playernormal();
     if(obj_ranged.guntype = 3) {
     
         obj_ranged.positionThree ="shotgun"
+    
+    }
+
+}
+//pistol
+if(place_meeting(x,y,obj_pistol))   {
+
+    if(obj_ranged.guntype = 1) {
+    
+        obj_ranged.positionOne ="pistol"
+
+    
+    }
+    if(obj_ranged.guntype = 2) {
+    
+        obj_ranged.positionTwo ="pistol"
+    
+    }
+    if(obj_ranged.guntype = 3) {
+    
+        obj_ranged.positionThree ="pistol"
     
     }
 

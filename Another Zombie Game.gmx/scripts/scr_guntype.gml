@@ -9,7 +9,7 @@ case 1: {
     }
     case "pistol":  {
     sprite_index = spr_pistol;
-    
+    scr_pistol();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -19,7 +19,7 @@ case 1: {
     }
     case "shotgun": {
     sprite_index = spr_shotgun;
-    
+    scr_shotgun();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -29,7 +29,7 @@ case 1: {
     }
     case "rpg": {
     sprite_index = spr_rpg;
-    
+    scr_rpg();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -53,7 +53,7 @@ switch(positionTwo) {
     }
     case "pistol":  {
     sprite_index = spr_pistol
-    
+    scr_pistol();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -63,7 +63,7 @@ switch(positionTwo) {
     }
     case "shotgun": {
     sprite_index = spr_shotgun
-    
+    scr_shotgun();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -73,7 +73,7 @@ switch(positionTwo) {
     }
     case "rpg": {
     sprite_index = spr_rpg
-    
+    scr_rpg();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -96,7 +96,7 @@ switch(positionThree) {
     }
     case "pistol":  {
     sprite_index = spr_pistol
-    
+    scr_pistol();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -106,7 +106,7 @@ switch(positionThree) {
     }
     case "shotgun": {
     sprite_index = spr_shotgun
-    
+    scr_shotgun();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down
@@ -116,7 +116,7 @@ switch(positionThree) {
     }
     case "rpg": {
     sprite_index = spr_rpg
-    
+    scr_rpg();
     if(obj_player.dir = 90)   image_index = 0; //up
     if(obj_player.dir = 0)    image_index = 1; //right
     if(obj_player.dir = 270)  image_index = 2; //down

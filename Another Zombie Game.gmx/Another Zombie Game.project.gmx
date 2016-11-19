@@ -38,6 +38,11 @@
         <sprite>sprites\spr_rpg_ground</sprite>
       </sprites>
       <sprite>sprites\spr_gunholder</sprite>
+      <sprites name="ammunation">
+        <sprite>sprites\spr_shotgunBullet</sprite>
+        <sprite>sprites\spr_pistolBullet</sprite>
+        <sprite>sprites\spr_rpgBullet</sprite>
+      </sprites>
     </sprites>
     <sprites name="test">
       <sprite>sprites\spr_gun2</sprite>
@@ -71,9 +76,9 @@
         <script>scripts\scr_gunplacement.gml</script>
       </scripts>
       <scripts name="List of Weapons">
-        <script>scripts\scr_collisionWeaponOne.gml</script>
-        <script>scripts\scr_collisionWeaponTwo.gml</script>
-        <script>scripts\scr_collisionWeaponThree.gml</script>
+        <script>scripts\scr_shotgun.gml</script>
+        <script>scripts\scr_pistol.gml</script>
+        <script>scripts\scr_rpg.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -94,6 +99,11 @@
           <object>objects\obj_shotgun</object>
           <object>objects\obj_pistol</object>
           <object>objects\obj_rpg</object>
+        </objects>
+        <objects name="Ammunation">
+          <object>objects\obj_shotgunBullet</object>
+          <object>objects\obj_rpgBullet</object>
+          <object>objects\obj_pistolBullet</object>
         </objects>
       </objects>
       <objects name="player stats">
