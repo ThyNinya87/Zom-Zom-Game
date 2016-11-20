@@ -20,6 +20,7 @@
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_settings</sprite>
       <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_fullscreen</sprite>
     </sprites>
     <sprites name="Weapons">
       <sprites name="Inhand">
@@ -114,22 +115,34 @@
       <object>objects\obj_shotgun_on</object>
     </objects>
     <objects name="UI">
-      <object>objects\obj_inti</object>
+      <object>objects\obj_inventorySelect</object>
     </objects>
-    <objects name="Menu">
-      <object>objects\obj_menu</object>
-      <object>objects\obj_settings</object>
-      <object>objects\obj_quit</object>
+    <objects name="Menu/Settings">
+      <objects name="Menu">
+        <object>objects\obj_play</object>
+        <object>objects\obj_settings</object>
+        <object>objects\obj_quit</object>
+      </objects>
+      <objects name="Settings">
+        <object>objects\obj__fullscreen</object>
+      </objects>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_pause</object>
+      <object>objects\obj_inti</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_intiliaze</room>
-    <room>rooms\rm_menu</room>
-    <room>rooms\rm_test</room>
-    <room>rooms\rm_settings</room>
+    <rooms name="inti">
+      <room>rooms\rm_intiliaze</room>
+    </rooms>
+    <rooms name="menu/settings">
+      <room>rooms\rm_menu</room>
+      <room>rooms\rm_settings</room>
+    </rooms>
+    <rooms name="game">
+      <room>rooms\rm_test</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
