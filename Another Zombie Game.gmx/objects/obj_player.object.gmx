@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>velx = 0; 
 vely = 0;
-movespeed = 2;
+movespeed = 1.5;
 anmi_speed = 0.2;
 state = "idle";
 dir = 90;
