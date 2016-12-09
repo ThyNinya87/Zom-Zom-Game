@@ -81,11 +81,11 @@
         <script>scripts\scr_pistol.gml</script>
         <script>scripts\scr_rpg.gml</script>
       </scripts>
+      <scripts name="bullet scrs">
+        <script>scripts\scr_shotgun_bulletcreate.gml</script>
+      </scripts>
     </scripts>
   </scripts>
-  <shaders name="shaders">
-    <shader type="GLSLES">shaders\shader0.shader</shader>
-  </shaders>
   <objects name="objects">
     <objects name="Player">
       <objects name="Hero">

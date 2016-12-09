@@ -27,12 +27,15 @@
             <kind>1</kind>
             <string>velx = 0; 
 vely = 0;
-movespeed = 1.5;
+movespeed_normal = 1.5;
+movespeed_gun = 0;
+movespeed = movespeed_normal;
 anmi_speed = 0.2;
 state = "idle";
 dir = 90;
 accel = 1.5
 depth = -1;
+attack = 0
 //gun 
 instance_create(x,y,obj_ranged);
 scr_gunplacement();
@@ -63,9 +66,11 @@ gamepad_set_axis_deadzone(1,0.5);
           <argument>
             <kind>1</kind>
             <string>if  (obj_pause.pause)   exit;
+if(attack != 1) {
 
 scr_playernormal();
 
+}
 </string>
           </argument>
         </arguments>

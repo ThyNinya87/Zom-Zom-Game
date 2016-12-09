@@ -58,6 +58,9 @@ depth = -1;
           <argument>
             <kind>1</kind>
             <string>canShoot = true;
+obj_player.movespeed = 1.5;
+
+attack = 0;
 </string>
           </argument>
         </arguments>
