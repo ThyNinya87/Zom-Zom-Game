@@ -15,6 +15,7 @@
     <sprites name="UI">
       <sprite>sprites\spr_health</sprite>
       <sprite>sprites\spr_shield</sprite>
+      <sprite>sprites\spr_money</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_play</sprite>
@@ -108,11 +109,18 @@
         </objects>
       </objects>
       <objects name="player stats">
-        <object>objects\obj_health</object>
-        <object>objects\obj_shield</object>
+        <objects name="health">
+          <object>objects\obj_health</object>
+          <object>objects\obj_shield</object>
+        </objects>
+        <objects name="money">
+          <object>objects\obj_money</object>
+        </objects>
       </objects>
-      <object>objects\obj_gunttype</object>
-      <object>objects\obj_shotgun_on</object>
+      <objects name="Misc">
+        <object>objects\obj_shotgun_on</object>
+        <object>objects\obj_gunttype</object>
+      </objects>
     </objects>
     <objects name="UI">
       <object>objects\obj_inventorySelect</object>

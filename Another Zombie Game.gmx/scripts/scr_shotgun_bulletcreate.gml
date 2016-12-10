@@ -1,4 +1,4 @@
-bullet_range =random_range(3,5)
+bullet_range = floor(random_range(3,5));
 
 if(bullet_range = 3) {
 instance_create(x + 10,y,obj_shotgunBullet);
